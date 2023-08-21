@@ -1,0 +1,66 @@
+// Sassのmin()関数
+@function _min($numbers...) {
+  @return min($numbers...);
+}
+// CSSのmin()関数
+@function min($values...) {
+  @return unquote('min(#{$values})');
+}
+
+//フォントサイズ
+@mixin fzMax($size, $property: font-size) {
+  $max-size: #{$size}px;
+  #{$property}: min(#{($size / 1366 * 100)}vw, $max-size);
+}
+
+
+@mixin fzSame($size, $property: font-size) {
+  #{$property}: min(#{$size}rem, #{$size}px);
+}
+
+
+@mixin tategaki($line: 1.7) {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.1em;
+  line-height: $line;
+  font-feature-settings: normal;
+}
+
+
+// ブレイクポイント
+//--------------------------------------------------
+
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 920px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1400px;
+
+  @if $range == mobile {
+    @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+  } @else if $range == tablet {
+    @media (min-width: $phone-upper-boundary) { @content; }
+  } @else if $range == tablet-h {
+    @media (min-width: $tablet-portrait-upper-boundary) { @content; }
+  } @else if $range == laptop {
+    @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+  } @else if $range == monitor {
+    @media (min-width: $desktop-upper-boundary) { @content; }
+  } @else if $range == tablet-h-less {
+    @media (max-width: #{$tablet-portrait-upper-boundary - 1}) { @content; }
+  } @else if $range == laptop-less {
+    @media (max-width: #{$tablet-landscape-upper-boundary - 1}) { @content; }
+  } @else if $range == monitor-less {
+    @media (max-width: #{$desktop-upper-boundary - 1}) { @content; }
+  }
+}
+// 使い方
+// .my-box {
+// padding: 10px;
+
+// @include for-size(pc-up) {
+//   padding: 20px;
+//  }
+// }
+

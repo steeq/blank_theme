@@ -1,0 +1,9 @@
+/*ヘッダーのスタイル*/
+
+.site_header {
+  padding: 20px;
+
+  @include for-size(laptop) {
+    padding: 40px 60px;
+  }
+}

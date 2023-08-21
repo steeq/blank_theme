@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/*
+Theme Name: STEEQ Blank
+Version: 1.0
+*/
+
+
+
+/* form */
+.wpcf7c-conf {
+	background: #E5E5E5 !important;
+}
+
+
+/* MW WP Form
+-------------------------------------------------- */
+.mw_wp_form .error input,
+.mw_wp_form .error textarea {
+	background: #FFF0F8 !important;
+}
+
+
+/* 入力画面 */
+.mw_wp_form_input {}
+
+/* 確認画面 */
+.mw_wp_form_confirm {}
+
+/* 送信完了画面 */
+.mw_wp_form_complete {}
+
+
+
+
+
+
+
+
+/* WordPress
+-------------------------------------------------- */
+/*
+.wp-entry h1 {
+	margin-bottom:0.8em;
+	font-size: 2.33em;
+	line-height: 1.5;
+  font-weight: bold;
+}
+.wp-entry h2 {
+	margin-bottom:0.7em;
+	font-size: 1.333em;
+	line-height: 1.5;
+  font-weight: bold;
+}
+.wp-entry h3 {
+	margin-bottom:0.65em;
+	font-size: 2.1em;
+	line-height: 1.5;
+  font-weight: bold;
+}
+.wp-entry h4 {
+	margin-bottom:0.6em;
+	font-size: 1.9em;
+	line-height: 1.5;
+  font-weight: bold;
+}
+.wp-entry h5 {
+	margin-bottom:0.55em;
+	font-size: 1.1em;
+	line-height: 1.5;
+  font-weight: bold;
+}
+.wp-entry h6 {
+	margin-bottom:0.5em;
+	font-size: 1em;
+	line-height: 1.5;
+  font-weight: bold;
+}
+
+.wp-entry p {
+	margin:0 0 0.8em;
+}
+*/
+.wp-entry p em {
+	font-style: italic !important;
+}
+
+.wp-entry ul,
+.wp-entry ol {
+	margin: 0 0 1em 25px;
+}
+
+.wp-entry ul {
+	list-style: disc;
+}
+
+.wp-entry ol {
+	list-style: decimal;
+}
+
+.wp-entry li>ul,
+.wp-entry li>ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+.wp-entry blockquote {
+	margin: 0 1.5em;
+}
+
+.wp-entry table {
+	margin: 0 0 1.5em;
+}
+
+.wp-entry th {
+	padding-right: 2em;
+}
+
+.wp-entry pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 90%;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+.wp-entry code {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+.wp-entry mark {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+.wp-entry blockquote {
+	margin: 0 0 1.25em;
+	padding: 0.5625em 1.25em 0 1.1875em;
+	border-left: 1px solid #ddd;
+	line-height: 1.6;
+	color: #6f6f6f;
+}
+
+.wp-entry strong {
+	font-weight: bold;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}

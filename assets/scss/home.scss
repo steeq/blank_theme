@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "mixin";
+@import "variables";
+
+/*トップページのスタイル*/
+
+.home_contents {
+  padding: 100px 0;
+
+  .inner {
+    width: 100%;
+    max-width: $width-base;
+    margin: 0 auto;
+  }
+}
+
+.home_section {
+
+  &_title {
+    font-weight: 700;
+    @include fzMax(20);
+  }
+}
+
+.home_news {
+
+  li {
+
+    & + & {
+      margin-top: 10px;
+    }
+  }
+
+  a {
+    display: block;
+
+    .date {
+      display: inline-block;
+    }
+
+    .title {
+      display: inline-block;
+    }
+  }
+}

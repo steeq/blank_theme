@@ -1,0 +1,36 @@
+// 幅
+//--------------------------------------------------
+
+$width-base: 1300px; // コンテンツ幅
+$width-middle: 1080px;
+$width-small: 780px;
+
+// フォント
+//--------------------------------------------------
+
+$font-base: 'Noto Sans JP', sans-serif;
+$font-en: sans-serif;
+$font-serif: serif;
+$font-gothic: $font-base;
+
+// 色
+//--------------------------------------------------
+
+// サイトカラー
+
+/* main colors */
+$color-primary: #176A90;
+$color-secondary: #D3A83C;
+
+$color-accent: #00ADA5;
+
+// shades - generated using chroma.js - 12 steps
+$black: #272727;
+$gray: #ccc;
+$gray-light: #f2f2f2;
+$gray-dark: #aaa;
+$beige: #FCF6EC;
+
+$white: #fff;
+
+$color-text: $black;
