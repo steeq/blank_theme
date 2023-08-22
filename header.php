@@ -25,6 +25,39 @@
     <div class="site_header_logo">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="https://placehold.jp/cccccc/ffffff/300x80.png" alt="logo"></a>
     </div>
+
+    <div class="global_nav">
+
+      <button class="global_nav_toggle nav-toggle">
+        <span class="global_nav_toggle_bar global_nav_toggle_bar-top"></span>
+        <span class="global_nav_toggle_bar global_nav_toggle_bar-mid"></span>
+        <span class="global_nav_toggle_bar global_nav_toggle_bar-btm"></span>
+      </button>
+
+      <nav class="global_nav_overlay">
+
+        <div class="global_nav_container">
+          <ul class="global_nav_list">
+            <li class="global_nav_list_item">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="global_nav_list_link">ホーム</a>
+            </li>
+            <li class="global_nav_list_item">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="global_nav_list_link">ページ</a>
+            </li>
+            <li class="global_nav_list_item">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="global_nav_list_link">ページ</a>
+            </li>
+            <li class="global_nav_list_item">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="global_nav_list_link">ページ</a>
+            </li>
+          </ul>
+          <!-- /.global_nav_list -->
+        </div>
+        <!-- /.global_nav_container -->
+
+      </nav>
+
+    </div>
   </header>
   <!-- /.site_header -->
 

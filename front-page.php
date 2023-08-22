@@ -6,6 +6,10 @@ Template Name: TOPページ
 <?php get_header(); ?>
 
 <div class="main_visual">
+  <picture>
+    <source media="(min-width: 920px)" srcset="https://placehold.jp/cccccc/ffffff/1920x1080.png">
+    <img src="https://placehold.jp/cccccc/ffffff/1080x1920.png" alt="">
+  </picture>
 </div><!--/.main_visual-->
 
 <div class="home_contents">
