@@ -29,7 +29,6 @@
       </div>
 
     <?php endwhile; ?>
-    </ul>
   <?php else: ?>
     <p>まだ記事がありません。</p>
   <?php endif; ?>

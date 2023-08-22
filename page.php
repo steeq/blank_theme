@@ -17,7 +17,6 @@
         </div>
 
       <?php endwhile; ?>
-      </ul>
     <?php else: ?>
       <p>ページが見つかりません</p>
     <?php endif; ?>
